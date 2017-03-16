@@ -92,6 +92,7 @@ class TicTacToe {
 
   playTurn(player) {
     this.showBoard();
+    
     if (this.gameOver) {
       console.log(`Gameover ${this.currentPlayer} wins!\n`)
     } else if (this.movesLeft <= 0) {
@@ -108,6 +109,7 @@ class TicTacToe {
         var y = parseInt(move[2]);
         
         var mark;
+
         if (this.currentPlayer === 'playerOne') {
           mark = this.players.playerOne;
         } else {
